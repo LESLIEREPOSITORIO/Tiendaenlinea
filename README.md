@@ -57,31 +57,45 @@ Dentro del proyecto, podemos apreciar como principal diagrama, cada una de las p
 Vista: es la parte de la estructura donde se muestra una interfaz que será para que el usuario pueda interactuar con la plataforma. 
 En esta parte del proyecto realizamos una vista de manera que sea entendible para el usuario, donde utilizamos botones, áreas de texto, validación de datos. 
 Como se muestra en el siguiente código, podemos visualizar como se realizó la interfaz de usuario donde tenemos un input de tipo texto, otro input de tipo password, dentro de este mismo código, observamos que se manda a llamar al controlador, y se utilizan diseños de CSS. 
+![image](https://github.com/LESLIEREPOSITORIO/Tiendaenlinea/assets/168056973/15f2d9cf-d21d-4eee-a4a8-24432cd3a613)
+
  
 Como se a mencionado utilizamos diseños CSS que funcionan como:
 .contenedor: que en su totalidad es el contorno donde se encuentra el login para ingresar a la aplicación web, teniendo una forma especial que se a integrado a este mismo. 
 .contenedor form: que es la forma en que será presentado el login, en este caso se da el tamaño en pixeles.
 .contenedor form input: el formato que llevará de igual manera el contenedor, en este caso se agrega que sea Cursiva y de igual manera se le da el tamaño en pixeles.
+![image](https://github.com/LESLIEREPOSITORIO/Tiendaenlinea/assets/168056973/0b5f407f-4d2a-4284-bda7-b99235809b16)
+
  
 Después de generar la parte del código “Login” tenemos el siguiente diseño, que se puede visualizar de manera simple y entendible.
  
+![image](https://github.com/LESLIEREPOSITORIO/Tiendaenlinea/assets/168056973/2a39fa84-ec53-463f-9ea7-987cb5553578)
 
 
 
 
 
 En el código siguiente podemos observar la realización del menú, donde tenemos la presentación de la aplicación web y por quienes a sido elaborada, teniendo en cuenta también el titulo de la página que ha sido denominado “supershop cosmetic”
- 
+ ![image](https://github.com/LESLIEREPOSITORIO/Tiendaenlinea/assets/168056973/3e220349-81f6-403f-8b1e-1d76f5909831)
+
 De está manera podemos encontrar nuestra vista de esta manera, agregando al código una serie de menú para entrar a las demás vistas. 
- 
+
+ ![image](https://github.com/LESLIEREPOSITORIO/Tiendaenlinea/assets/168056973/c18b9134-d647-420d-b78b-fe6aaa41669a)
+
 Modelo: donde se va a almacenar la llamada a la base de datos, permitiendo que se encuentre de igual manera los códigos relacionados a la base de datos. 
 Para realizar la base de datos, debemos realizar un diagrama de bases de datos, el cuál va guiando al programador para realizar la base de datos. 
 En este caso podemos visualizar las tablas de Usuario, la cual será utilizada para el login, Carrito está es utilizada para las compras que irá realizando el usuario. Prendas, en esta tabla se guardan los datos de cada uno de los productos que serán visualizados por el usuario, las Ventas las cuales también se van almacenando en nuestra base de datos, teniendo una segunda tabla, que recolecta el Detalle de venta donde se mantiene que es lo que compró el usuario.
- 
+
+ ![image](https://github.com/LESLIEREPOSITORIO/Tiendaenlinea/assets/168056973/9ab7186a-70b1-4cf2-9133-47cea5bae822)
+
 Dentro del siguiente lapso de código podemos apreciar como se manda a llamar la base de datos, donde se da la evaluación si el usuario y la contraseña son verdaderas y así mismo dejar ingresar al usuario a la siguiente parte de la vista. 
+![image](https://github.com/LESLIEREPOSITORIO/Tiendaenlinea/assets/168056973/85d5bef9-21f0-4ac4-96ff-9b6c3b7807be)
+
  
 Aquí podemos observar la creación de la base de datos, la cual también es perteneciente al modelo.
- 
+
+ ![image](https://github.com/LESLIEREPOSITORIO/Tiendaenlinea/assets/168056973/ef9024f9-2d6b-4265-9d04-fc1bb4a483d6)
+
 
 Controlador: prácticamente este realiza la comunicación entre la base de datos y la vista, para que así el usuario pueda interactuar con la base de datos por medio de la vista que se le imparte.
 En el controlador, como bien se ha mencionado tenemos que es la que interactúa entre la base de datos y la vista que será mostrada al usuario. Se da a conocer las siguientes líneas de código, donde se realiza la conexión de la base de datos.
@@ -90,15 +104,22 @@ $user = se ingresa el nombre del usuario de donde se extraerá en el caso de est
 $clave = en la clave, como su nombre lo indica se ingresa la contraseña del usuario, a veces este es denominado “$password” y en este caso podemos visualizar que se encuentran solas las comillas, esto es porque no se tiene contraseña en el usuario “”.
 $bd = aquí tendrá que agregar el nombre de la base de datos en este código se tiene como “Leslei”.
 $conexion = lo que realiza esta línea de código es que con los datos ya proporcionados se extrae la base de datos.
+![image](https://github.com/LESLIEREPOSITORIO/Tiendaenlinea/assets/168056973/115e5706-0abf-4237-8335-5773e2abe420)
+
  
 Se puede mostrar en el siguiente código, como se manda a llamar cada una de las partes de inserción para los productos, y se comunica con modelProduct.php, con la línea de código: 
 require_once "../model/modelProduct.php";
 La cual después se llama a la Vista, y se esta manera sea visualizada, de la manera en que se pueda visualizar cada uno de los productos. Con esta línea de código pueden llamarse las distintas clases de cualquier carpeta, para que así nuestro Modelo-Vista-Controlador sea de manera más eficiente.
+![image](https://github.com/LESLIEREPOSITORIO/Tiendaenlinea/assets/168056973/2e230827-49b1-491c-a210-d1748b02fbe3)
+
  
 Aquí se puede mostrar como con esta línea de código se puede integrar en la siguiente vista la base de datos para así poder agregar productos, ser eliminados e incluso agregar imágenes. 
- 
+ ![image](https://github.com/LESLIEREPOSITORIO/Tiendaenlinea/assets/168056973/51139e53-5057-4b96-aa95-8ba0c613f7a2)
+
 De esta manera, se va integrando nuestra carpeta CONTROLADOR, donde podemos encontrar login, delete, exit, mail, productos.
   
+![image](https://github.com/LESLIEREPOSITORIO/Tiendaenlinea/assets/168056973/012ea0dc-00f3-4fa4-acf7-80de5b708b52)
+![image](https://github.com/LESLIEREPOSITORIO/Tiendaenlinea/assets/168056973/8f9462bf-2445-493d-a8aa-b8c07f9ff6c7)
 
  
 1.5 CONCLUSIONES
